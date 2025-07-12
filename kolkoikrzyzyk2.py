@@ -15,6 +15,12 @@ def czy_wygrana():
             return True
         if plansza[0][i]['text'] == plansza[1][i]['text'] == plansza[2][i]['text'] == gracz:
             return True
+        
+        if plansza[0][0]['text'] == plansza[1][1]['text'] == plansza[2][2]['text'] == gracz:
+            return True
+        if plansza[2][0]['text'] == plansza[1][1]['text'] == plansza[0][2]['text'] == gracz:
+            return True
+        
     return False
 
 def ruch(x,y):
