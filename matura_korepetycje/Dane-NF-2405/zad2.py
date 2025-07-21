@@ -43,3 +43,14 @@ c = 4,1,3,1,2,1,1,1,0,1,1,2,1,3,1,4
 
 
 '''
+
+'''
+Zadanie 2.2.
+Na podstawie wykonanej wcześniej anlizy widzimy, mozemy ustalić, że dla
+przykładu z zadania 2.2. wynik będzie:
+1,1,1,1,1,1,1,3,3,3,3,3,3,1,1,1,1,1,1
+czyli:
+- dla 3 po sześć jedynek, bo 3%2 == 1
+- dla 6 po sześć 3 bo 6%2 == 0, a jak wiemy dodajemy do ciągu 6/2
+- dla 9 po sześć jedynek, bo 3%2 == 1
+'''
