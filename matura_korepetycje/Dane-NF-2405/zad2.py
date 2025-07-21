@@ -1,8 +1,9 @@
-b = 1
-c = 0
+
 list_n = [33658, 542102, 87654321012345678]
 
-def cyfry(b,c,n):
+def cyfry(n):
+    b = 1
+    c = 0
     counter = 0
     while n > 0:
         a = n % 10
@@ -17,7 +18,7 @@ def cyfry(b,c,n):
     return c, counter
 
 for element in list_n:
-    c, counter = cyfry(b,c,int(element))
+    c, counter = cyfry(int(element))
     print('c = {}, liczba instrukcji: {}'.format(c,counter))
 
 
