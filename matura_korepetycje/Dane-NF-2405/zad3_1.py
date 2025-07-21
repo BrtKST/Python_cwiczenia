@@ -46,11 +46,9 @@ counter = 0
 
 for element in lines:
     value = skrot_ret(element)
-    if value % 2 == 0:
+    if value == 0:
         counter += 1
-        if int(value) > maximum:
-            maximum = value
-            print('Maximum')
-            print(maximum)
+        if int(element) > int(maximum):
+            maximum = element
 
 print(f'Największy skrót: {maximum}. W sumie w pliku wystepuje {counter} skrótów, które nie mają nieparzystego skrótu.')
