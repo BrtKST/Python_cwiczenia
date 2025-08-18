@@ -68,7 +68,6 @@ def wspolny_dzielnik(a,b):
         a, b = b, a % b
     return a
 
-
 new_list = list()
 for element in lines1:
     value = skrot_ret(element)
