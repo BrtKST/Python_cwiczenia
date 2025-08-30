@@ -24,7 +24,7 @@ print(new_json)
 #Zadanie 1 - zaimportuj odpowiedni moduł JSON, stwórz słownik w python i przekonwertuj 
 # go na JSON
  
-#import JSON
+#import json
 
 slownik1 = {
     'Imie': 'Bartosz',
@@ -34,3 +34,14 @@ slownik1 = {
 
 json_slownik1 = json.dumps(slownik1,indent=2)
 print(json_slownik1)
+
+#Zadanie 2 - zaimportuj odpowiedni moduł JSON, stwórz słownik na podstawie danych z pliku 'slownik.txt'
+#przekonwertuj go na JSON
+
+#import json
+
+with open('slownik.txt', 'r') as file:
+    json_slownik2 = json.load(file)
+print(json_slownik2)
+
+#json.load() używamy bezpośrendio do odczytu z plików, natomiast json.loads() do odczytów ze string
