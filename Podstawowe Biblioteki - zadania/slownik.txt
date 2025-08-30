@@ -1,0 +1,5 @@
+{
+    "imie": "Bartosz",
+    "wiek": 20,
+    "wczytano z pliku": true
+}
