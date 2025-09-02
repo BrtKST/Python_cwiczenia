@@ -1,5 +1,5 @@
 #zadanie 1
-
+'''
 liczby = [int(input('Podaj liczbe calkowita: ')) for i in range(5)]
 print(sum(liczby),max(liczby),min(liczby),max(liczby)-min(liczby))
 
@@ -46,3 +46,11 @@ def pierwsze1(n):
         if czy_pierwsza1(i): lista3_1.append(i)
         i+=1
 print(pierwsze(n1))
+'''
+#zadanie 4
+with open('liczby_1.txt', 'r') as file:
+    lines = sorted([int(line.strip()) for line in file])
+#print(lines[0])
+
+mediana = (lines[len(lines)//2] if len(lines) % 2 == 0 else (lines[len(lines)//2-1] + lines[len(lines)//2])/2)
+print(mediana)
